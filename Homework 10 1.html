@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="container">
+            <div>
+                <h1>Объект, массивы.</h1>
+    
+                <P>    
+                    Объект, массивы, объект array, 
+                    строки, объект string, объект date, 
+                    объект math, введение в ооп.
+                </P>
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <div class="row main-cards">
+    
+    
+                <!-- Task 1 -->
+                <div class="col-12 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Задание 1</h5>
+                        <p class="card-text">
+                            Создать объект, описывающий автомобиль (производитель,
+                            модель, год выпуска, средняя скорость), и следующие функции
+                            для работы с этим объектом.
+                        </p>
+
+                        <p class="card-text">
+                            1. Функция для вывода на экран информации об автомобиле.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showCarInfo(car)">
+                            Показать информацию
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            2. Функция для подсчета необходимого времени для 
+                            преодоления переданного расстояния со средней скоростью.
+                            Учтите, что через каждые 4 часа дороги водителю 
+                            необходимо делать перерыв на 1 час.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showTravelTime()">
+                            Посчитать время
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Task 2 -->
+                <div class="col-12 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Задание 2</h5>
+                        <p class="card-text">
+                            Создать объект, хранящий в себе отдельно числитель и 
+                            знаменатель дроби, и следующие функции для работы с этим 
+                            объектом.
+                        </p>
+
+                        <p class="card-text">
+                            1. Функция сложения 2-х объектов-дробей.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showCompute('+')">
+                            Сложение
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            2. Функция вычитания 2-х объектов-дробей.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showCompute('-')">
+                            Вычитание
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            3. Функция умножения 2-х объектов-дробей.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showCompute('*')">
+                            Умножение
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            4. Функция деления 2-х объектов-дробей.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showCompute('/')">
+                            Деление
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            5. Функция сокращения объекта-дроби.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showCompute('=')">
+                            Сокращение
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Task 3 -->
+                <div class="col-12 card">
+                    <div class="card-body">
+                        <h5 class="card-title">Задание 3</h5>
+                        <p class="card-text">
+                            Создать объект, описывающий время 
+                            (часы, минуты, секунды), 
+                            и следующие функции для работы с этим объектом.
+                        </p>
+
+                        <p class="card-text">
+                            1. Функция вывода времени на экран.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="showTime()">
+                            Показать время
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            2. Функция изменения времени на переданное количество
+                            секунд.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="changeSeconds()">
+                            Изменить секунды
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            3. Функция изменения времени на переданное количество
+                            минут.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="changeMinutes()">
+                            Изменить минуты 
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            4. Функция изменения времени на переданное количество
+                            часов.
+                        </p>
+                        <button type="button" class="btn btn-success"
+                                onclick="changeHours()">
+                            Изменить часы
+                        </button>
+
+                        <p class="card-text main-card-text">
+                            Учтите, что в последних 3-х функциях, при изменении одной
+                            части времени, может измениться и другая. Например: если ко
+                            времени «20:30:45» добавить 30 секунд, то должно получиться
+                            «20:31:15», а не «20:30:75».
+                        </p>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+
+</body>
+</html>
